@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.playing-field {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    justify-content: center;
+    align-content: center;
+}
+
+.field {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.field-1 {
+    border-top: none;
+    border-left: none;
+}
+
+.field-2 {
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.field-3 {
+    border-top: none;
+    border-right: none;
+}
+
+.field-4 {
+    border: none;
+    border-right: 2px solid black;
+}
+
+.field-5 {
+    border: none;
+}
+
+.field-6 {
+    border: none;
+    border-left: 2px solid black;
+}
+
+.field-7 {
+    border-left: none;
+    border-bottom: none;
+}
+
+.field-8 {
+    border: none;
+    border-top: 2px solid black;
+}
+
+.field-9 {
+    border-right: none;
+    border-bottom: none;
+}
+
+.circle,
+.cross {
+    max-width: 200px;
+}
+
+.none {
+    display: none;
+}
+
+@media (max-width: 720px) {
+    .playing-field {
+        grid-template-columns: repeat(3, 100px);
+    }
+    .field {
+        width: 100px;
+        height: 100px;
+    }
+}
